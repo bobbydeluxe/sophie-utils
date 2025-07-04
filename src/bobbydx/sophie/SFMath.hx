@@ -86,7 +86,7 @@ class SFMath {
     public static function floor(value:Float):Float return Math.floor(value);
     public static function ceil(value:Float):Float return Math.ceil(value);
     public static function round(value:Float):Int return Math.round(value);
-    public static function approxEQ(a:Float, b:Float, tolerance:Float = EPSILON):Bool {
+    public static function approxEQ(a:Float, b:Float, tolerance:Float = 1e-10):Bool {
         return Math.abs(a - b) <= tolerance;
     }
     public static function sign(value:Float):Int {
@@ -144,11 +144,5 @@ class SFMath {
     public static function lcm(a:Int, b:Int):Float {
         if (a == 0 || b == 0) return 0;
         return Math.abs(a * b) / gcd(a, b);
-    }
-
-    // --- SNAPPING ---
-
-    public static function snap(value:Float, step:Float, roundFunc:Float->Float = Math.round):Float {
-        return roundFunc(value / step) * step;
     }
 }
