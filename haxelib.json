@@ -1,0 +1,14 @@
+{
+    "name": "sophie-utils",
+    "url": "https://github.com/bobbydeluxe/sophie-utils",
+    "license": "MIT",
+    "tags": ["utility", "api", "haxeflixel"],
+    "description": "just your average utility library. i personally don't know.",
+    "version": "0.0.1",
+    "classPath": "src",
+    "releasenote": "init release. everything's up i guess.",
+    "contributors": ["bobbyDX"],
+    "dependencies": {
+        "flixel": ""
+    }
+}
